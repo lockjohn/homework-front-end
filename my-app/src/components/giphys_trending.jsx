@@ -26,6 +26,10 @@ class GiphysTrending extends React.Component {
         this.props.fetchTrendingGiphys(0);
     }
 
+    gRated(){
+        this.props.fetchTrendingGiphys(0,'g');
+    }
+
     render() {
         let giphys  = this.props.trending;
         if (!giphys) return (<div>L O A D i n g . . .</div>);
@@ -35,6 +39,7 @@ class GiphysTrending extends React.Component {
             <div id="animated_div_trend">
                 <h2>Giphy Trendy</h2>
             </div>
+                <button onClick={()=>this.gRated()}></button>
                 <GiphysIndex giphys={giphys} />
             </div>);
       

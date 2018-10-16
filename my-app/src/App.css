@@ -23,21 +23,7 @@ img {
   border-radius: 5px;
 }
 
-.app-wrapper {
-  display:flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-}
 
-.search-bar {
-  padding-bottom: 15px;
-}
-
-.search-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-}
 form {
   margin-top: 20px;
 }
@@ -64,6 +50,23 @@ button {
   cursor: pointer;
   font-weight: bold;
 }
+
+.app-wrapper {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+.search-bar {
+  padding-bottom: 15px;
+}
+
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
 .hover-wrapper {
 position: relative;
 
@@ -111,15 +114,6 @@ border-radius:5px;
 -webkit-border-radius:5px;
 }
 
-@keyframes animated_div
-{
-0% {transform: rotate(0deg);left:0px;}
-25% {transform: rotate(20deg);left:0px;}
-50% {transform: rotate(0deg);left:500px;}
-55% {transform: rotate(0deg);left:500px;}
-70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
-100% {transform: rotate(-360deg);left:0px;}
-}
 
 #animated_div_search {
 width:210px;
@@ -133,4 +127,14 @@ padding:10px;
 animation:animated_div 5s 1;
 border-radius:5px;
 -webkit-border-radius:5px;
+}
+
+@keyframes animated_div
+{
+0% {transform: rotate(0deg);left:0px;}
+25% {transform: rotate(20deg);left:0px;}
+50% {transform: rotate(0deg);left:500px;}
+55% {transform: rotate(0deg);left:500px;}
+70% {transform: rotate(0deg);left:500px;background:#1ec7e6;}
+100% {transform: rotate(-360deg);left:0px;}
 }
