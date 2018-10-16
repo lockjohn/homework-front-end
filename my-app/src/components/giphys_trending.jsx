@@ -32,9 +32,9 @@ class GiphysTrending extends React.Component {
             
         return (
             <div className="search-wrapper "> 
-            <header className="">
-                <h2>Trending Gifs</h2>
-            </header>
+            <div id="animated_div_trend">
+                <h2>Giphy Trendy</h2>
+            </div>
                 <GiphysIndex giphys={giphys} />
             </div>);
       

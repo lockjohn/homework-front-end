@@ -29,6 +29,9 @@ class GiphysSearch extends React.Component {
 
     return (
       <div className="search-wrapper">
+        <div id="animated_div_search">
+          <h2>Giphy Searchy</h2>
+        </div>
         <form className="search-bar">
           <input value={this.state.searchTerm} onChange={this.handleChange} />
           <button type="submit" onClick={this.handleSubmit}>Search Giphy</button>
