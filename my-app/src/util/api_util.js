@@ -1,6 +1,6 @@
 export const fetchSearchGiphys = searchTerm => {
 
-return fetch(`http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=dc6zaTOxFJmzC&limit=10`)
+return fetch(`http://api.giphy.com/v1/gifs/search?q=${searchTerm}&api_key=dc6zaTOxFJmzC&limit=5`)
 .then(response => {
     return response.json();
   });

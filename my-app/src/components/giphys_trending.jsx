@@ -31,8 +31,10 @@ class GiphysTrending extends React.Component {
         if (!giphys) return (<div>L O A D i n g . . .</div>);
             
         return (
-            <div>
+            <div className="search-wrapper "> 
+            <header className="">
                 <h2>Trending Gifs</h2>
+            </header>
                 <GiphysIndex giphys={giphys} />
             </div>);
       

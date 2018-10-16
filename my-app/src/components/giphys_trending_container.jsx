@@ -3,7 +3,6 @@ import GiphysTrending from './giphys_trending';
 import { fetchTrendinGiphys } from "../actions/giphy_actions";
 
 const mapStateToProps = state => {
-    console.log(state.trending)
     return { trending: state.trending };
 };
 
