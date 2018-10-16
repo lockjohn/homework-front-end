@@ -6,7 +6,7 @@ class GiphysTrending extends React.Component {
     constructor() {
         super();
         this.state = { offset: 1, hasMore: true };
-        
+   
 
         // Binds our scroll event handler
         window.onscroll = () => {
@@ -26,20 +26,17 @@ class GiphysTrending extends React.Component {
         this.props.fetchTrendingGiphys(0);
     }
 
-    gRated(){
-        this.props.fetchTrendingGiphys(0,'g');
-    }
 
     render() {
         let giphys  = this.props.trending;
         if (!giphys) return (<div>L O A D i n g . . .</div>);
             
         return (
-            <div className="search-wrapper "> 
+            <div className="search-wrapper ">
             <div id="animated_div_trend">
                 <h2>Giphy Trendy</h2>
             </div>
-                <button onClick={()=>this.gRated()}></button>
+                
                 <GiphysIndex giphys={giphys} />
             </div>);
       

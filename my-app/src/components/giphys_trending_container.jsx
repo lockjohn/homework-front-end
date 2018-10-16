@@ -7,7 +7,7 @@ const mapStateToProps = state => {
 };
 
 const mapDispatchToProps = dispatch => {
-    return { fetchTrendingGiphys: offset => dispatch(fetchTrendinGiphys(offset)) };
+    return { fetchTrendingGiphys: (offset,rating) => dispatch(fetchTrendinGiphys(offset,rating)) };
 };
 
 export default connect(

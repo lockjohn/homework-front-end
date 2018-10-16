@@ -9,9 +9,9 @@ export const fetchSearchGiphys = searchTerm => dispatch => {
 		.then(giphys => dispatch(receiveSearchGiphys(giphys.data)))
 };
 
-export const fetchTrendinGiphys = offset => dispatch => {
+export const fetchTrendinGiphys = (offset,rating) => dispatch => {
 
-	return APIUtil.fetchTrendingGiphys(offset)
+	return APIUtil.fetchTrendingGiphys(offset,rating)
 		.then(giphys => dispatch(receiveTrendingGiphys(giphys.data)))
 };
 
