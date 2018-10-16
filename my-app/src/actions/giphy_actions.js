@@ -10,6 +10,7 @@ export const fetchSearchGiphys = searchTerm => dispatch => {
 };
 
 export const fetchTrendinGiphys = offset => dispatch => {
+	console.log("test point 1")
 	return APIUtil.fetchTrendingGiphys(offset)
 		.then(giphys => dispatch(receiveTrendingGiphys(giphys.data)))
 };

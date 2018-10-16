@@ -1,18 +1,17 @@
 import { connect } from 'react-redux';
 import GiphysTrending from './giphys_trending';
-import { fetchSearchGiphys } from '../actions/giphy_actions';
+import { fetchTrendinGiphys } from "../actions/giphy_actions";
 
 const mapStateToProps = state => {
-    return { giphys: state.search };
+    console.log(state.trending)
+    return { trending: state.trending };
 };
 
 const mapDispatchToProps = dispatch => {
-    return {
-        fetchSearchGiphys: searchTerm => dispatch(fetchSearchGiphys(searchTerm))
-    };
+    return { fetchTrendingGiphys: offset => dispatch(fetchTrendinGiphys(offset)) };
 };
 
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(GiphysSearch);
+)(GiphysTrending);

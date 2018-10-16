@@ -4,7 +4,9 @@
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+  height: 20vmin;
+  width:100%; 
+  /* position:absolute; */
 }
 
 .App-header {
@@ -39,6 +41,11 @@ body {
 ul {
   list-style: none;
   padding-left: 0;
+  -webkit-backface-visibility: hidden;
+}
+
+div {
+  display: inline-flex;
 }
 
 .giphy-li {
@@ -51,7 +58,12 @@ img {
 }
 
 .search-bar {
+
   padding-bottom: 15px;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 input {
@@ -68,4 +80,36 @@ button {
   padding: 6px;
   border: none;
   font-size: 10px;
+}
+.hover-wrapper {
+position: relative;
+
+}
+.hover-wrapper:hover .hover-inner {
+  display: flex;
+}
+
+.hover-inner {
+  width: 100%;
+  display: none;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  bottom: 0;
+  background-color: #ff0000;
+  /* overflow: hidden; */
+  box-sizing: border-box;
+}
+
+.hover-inner p {
+  display: inline;
+  align-self: center;
+  padding: 1px;
+}
+
+.hover-inner a {
+  padding: 2px;
+  display: inline;
+    align-self: center;
 }
